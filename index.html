@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genius</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="navbar bg-base-100 py-4 shadow-2xl lg:px-12">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl  ">Interactive<br> 
+            Geometry Genius</a>
+        </div>
+        <div class="flex-none gap-2">
+          
+          <button class="btn btn-active btn-primary" id="btn">Button</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+        <div
+          class="products-cetails  w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- first card  -->
+          <div class=" bg-sky-500 card card-compact w-full bg-base-100 shadow-xl" id="card" >
+            <figure>
+              <img class="w-44 h-32 py-2" src="images/triangle.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-right" id="first-name">Triangle</h2>
+              <p class="text-center">
+                Area (A) = 0.5 * b * h;
+              </p>
+              <div class="flex   py-2">
+                <input
+                type="text"
+                id="first-input"
+                placeholder="b"
+                class="input input-bordered input-sm w-16 max-w-xs"
+              />
+              <p class="mx-2">cm</p>
+              
+              <input
+                type="text"
+                placeholder="h"
+                id="second-input"
+                class="input input-bordered input-sm w-16 max-w-xs"
+              />
+              <p class="mx-2">cm</p>
+            </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary" id="first-card">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- second card  -->
+          <div class=" card card-compact w-full bg-base-100 shadow-xl " id="card2">
+            <figure>
+              <img class="w-44 h-32 py-2" src="images/rectangle.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-center" id="second-name">Rectangle</h2>
+              <p class="text-center">
+                Area (A) = w * I
+              </p>
+              <div class="flex py-2">
+                <input
+                type="text"
+                id="second-card-first-input"
+                placeholder="w"
+                class="input input-bordered input-sm w-16 max-w-xs"
+              />
+              <p class="mx-2">cm</p>
+              
+              <input
+                type="text"
+                placeholder="I"
+                id="second-card-second-input"
+                class="input input-bordered input-sm w-16 max-w-xs"
+              />
+              <p class="mx-2">cm</p>
+            </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary" id="second-card">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- third card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl "id="card3">
+            <figure>
+              <img class="w-44 h-32 py-2" src="images/parallelogram.png" alt="Shoes" />
+            </figure>
+            <div class="card-body py-2">
+              <h2 class="card-title text-center" id="third-name">Parallelogram</h2>
+              <p class="text-center">
+                Area (A) = b * h;
+              </p>
+              <div class="flex">
+                <input
+                type="text"
+                id="third-card-first-input"
+                placeholder="b"
+                class="input input-bordered input-sm w-16 max-w-xs"
+              />
+              <p class="mx-2">cm</p>
+              
+              <input
+                type="text"
+                placeholder="h"
+                id="third-card-second-input"
+                class="input input-bordered input-sm w-16 max-w-xs"
+              />
+              <p class="mx-2">cm</p>
+            </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary" id="third-card">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- fourth card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl" id="card4">
+            <figure>
+              <img class="w-44 h-32 py-2" src="images/rhombus.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-center" id="fourth-name">Rhombus</h2>
+              <p class="text-center">
+                Area (A) = 0.5 * d1 * d2;
+              </p>
+              <div class="flex py-2">
+                <input
+                type="text"
+                id="fourth-card-first-input"
+                placeholder="d1"
+                class="input input-bordered input-sm w-16 max-w-xs"
+              />
+              <p class="mx-2">cm</p>
+              
+              <input
+                type="text"
+                placeholder="d2"
+                id="fourth-card-second-input"
+                class="input input-bordered input-sm w-16 max-w-xs"
+              />
+              <p class="mx-2">cm</p>
+            </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary" id="fourth-card">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- 5th card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl" id="card5">
+            <figure>
+              <img class="w-44 h-32 py-2" src="images/pentagon.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title text-center" id="fifth-name">Pentagon</h2>
+              <p class="text-center">
+                Area (A) =0.5 * p * b;
+              </p>
+              <div class="flex py-2">
+                <input
+                type="text"
+                id="fifth-card-first-input"
+                placeholder="p"
+                class="input input-bordered input-sm w-16 max-w-xs"
+              />
+              <p class="mx-2">cm</p>
+              
+              <input
+                type="text"
+                placeholder="b"
+                id="fifth-card-second-input"
+                class="input input-bordered input-sm w-16 max-w-xs"
+              />
+              <p class="mx-2">cm</p>
+            </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary" id="fifth-card">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          
+          <!-- ///last card -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl" id="card6">
+            <figure>
+              <img class="w-44 h-32 py-2" src="images/ellipse.png" alt="Shoes" />
+            </figure>
+            <div class="card-body py-2">
+              <h2 class="card-title text-center" id="sixth-name">Ellipse</h2>
+              <p class="text-center">
+                Area (A) = pi * a * b
+              </p>
+              <div class="flex">
+                <input
+                type="text"
+                id="sixth-card-first-input"
+                placeholder="a"
+                class="input input-bordered input-sm w-16 max-w-xs"
+              />
+              <p class="mx-2">cm</p>
+              
+              <input
+                type="text"
+                placeholder="b"
+                id="sixth-card-second-input"
+                class="input input-bordered input-sm w-16 max-w-xs"
+              />
+              <p class="mx-2">cm</p>
+            </div>
+              <div class="card-actions justify-center">
+                <button class="btn btn-primary" id="sixth-card">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+           
+
+        <!-- cart details div  -->
+        <div class="border-solid border-2 border-indigo-600 cart-details w-full md:w-[40%] lg:w-[40%] mx-auto p-6">
+          <h1 class="text-3xl text-center font-bold underline mt-5">
+           Area calculation
+          </h1>
+          <div class="overflow-x-auto">
+            <table class="table w-full">
+             
+              <tbody id="table-container">
+               
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
